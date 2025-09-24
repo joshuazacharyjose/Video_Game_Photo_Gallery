@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gameography</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts: League Script and Lobster -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Lobster&family=Marck+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rock+Salt&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <div class="nav-buttons">
+      <button class="nav-btn" data-section="minecraft">Minecraft</button>
+      <button class="nav-btn" data-section="gta6">GTA 6</button>
+      <button class="nav-btn" data-section="mafia">Mafia: DE</button>
+    </div>
+    <div class="title">🎮</div>
+  </div>
+
+ <div class="hero" id="hero-section">
+  <img src="mc_hero.jpg" class="hero-img" alt="Minecraft Hero" data-section="minecraft">
+  <img src="gta_hero.jpg" class="hero-img" alt="GTA 6 Hero" data-section="gta6" style="display: none;">
+  <img src="mf_hero.jpg" class="hero-img" alt="Mafia Hero" data-section="mafia" style="display: none;">
+
+  <div class="hero-content">
+    <div class="hero-title">Gameography</div>
+    <div class="hero-subtitle">
+      Exploring the beauty of video game worlds through stunning screenshots
+    </div>
+  </div>
+</div>
+
+
+
+  <!-- Gallery Sections -->
+  <div class="gallery-container">
+    <!-- Minecraft Section -->
+    <div class="gallery-section" id="minecraft-section" data-section="minecraft">
+      <img src="mc_logo.png" alt="Minecraft Logo" class="game-logo">
+      <h1 class="gallery-title">Minecraft Gallery</h1>
+      <div class="stacked-gallery">
+        <img src="mc1.jpg" class="stacked-img" alt="Minecraft Image 1" data-index="1">
+        <img src="mc2.jpg" class="stacked-img" alt="Minecraft Image 2" data-index="2">
+        <img src="mc3.jpg" class="stacked-img" alt="Minecraft Image 3" data-index="3">
+        <img src="mc4.jpg" class="stacked-img" alt="Minecraft Image 4" data-index="4">
+        <img src="mc5.jpg" class="stacked-img" alt="Minecraft Image 5" data-index="5">
+        <img src="mc6.jpg" class="stacked-img" alt="Minecraft Image 6" data-index="6">
+      </div>
+    </div>
+
+    <!-- GTA 6 Section -->
+    <div class="gallery-section" id="gta6-section" data-section="gta6">
+      <img src="gta_logo.png" alt="GTA6 Logo" class="game-logo">
+      <h1 class="gallery-title">GTA 6 Gallery</h1>
+      <div class="stacked-gallery">
+        <img src="gta1.jpg" class="stacked-img" alt="GTA 6 Image 1" data-index="1">
+        <img src="gta2.jpg" class="stacked-img" alt="GTA 6 Image 2" data-index="2">
+        <img src="gta3.jpg" class="stacked-img" alt="GTA 6 Image 3" data-index="3">
+        <img src="gta4.jpg" class="stacked-img" alt="GTA 6 Image 4" data-index="4">
+        <img src="gta5.jpg" class="stacked-img" alt="GTA 6 Image 5" data-index="5">
+        <img src="gta6.jpg" class="stacked-img" alt="GTA 6 Image 6" data-index="6">
+      </div>
+    </div>
+
+    <!-- Mafia: Definitive Edition Section -->
+    <div class="gallery-section" id="mafia-section" data-section="mafia" style="display: none;">
+      <img src="mf_logo.png" alt="Mafia:DE Logo" class="game-logo">
+      <h1 class="gallery-title">Mafia: DE Gallery</h1>
+      <div class="stacked-gallery">
+        <img src="mf1.jpg" class="stacked-img" alt="Mafia DE Image 1" data-index="1">
+        <img src="mf2.jpg" class="stacked-img" alt="Mafia DE Image 2" data-index="2">
+        <img src="mf3.jpg" class="stacked-img" alt="Mafia DE Image 3" data-index="3">
+        <img src="mf4.jpg" class="stacked-img" alt="Mafia DE Image 4" data-index="4">
+        <img src="mf5.jpg" class="stacked-img" alt="Mafia DE Image 5" data-index="5">
+        <img src="mf6.jpg" class="stacked-img" alt="Mafia DE Image 6" data-index="6">
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body position-relative">
+        <span class="close-btn" data-bs-dismiss="modal">&times;</span>
+        <img src="" class="modal-img" id="modalImage" alt="Large Image">
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Bootstrap JS and jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>
