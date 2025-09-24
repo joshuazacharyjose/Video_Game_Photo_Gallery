@@ -6,4 +6,4 @@ This project work displays pictures in a gallery, based on three video games. Th
 - [Evan K. S.](https://github.com/EVAN-KS) - 2462067 
 - [Joshua Zachary Jose](https://github.com/joshuazacharyjose) - 2462093
 
-Live Demo to Site :- 
+Live Demo to Site :- [Gameography Photo Gallery Website](https://joshuazacharyjose.github.io/Video_Game_Photo_Gallery/)
